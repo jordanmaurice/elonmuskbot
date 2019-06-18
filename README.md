@@ -2,6 +2,10 @@
 
 This is a basic Python script used to repost tweets from Elon Musk and the Tesla Twitter account.  
 
+Example image of what it appears as:
+<img src = "https://github.com/jordanmaurice/elonmuskbot/blob/master/elon_bot_examples.png?raw=true">
+
+
 The script can be easily updated to add additional twitter handles.
 
 To use this script you will need to complete a few steps.
