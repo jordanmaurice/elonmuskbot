@@ -18,14 +18,14 @@ class Tweet:
 		teamsMessage = pymsteams.connectorcard(tweet.teamsUrl)
 
 		# Add text to the message.
-		teamsMessage.text(tweet.userName + " posted a new tweet!")
+		teamsMessage.text("{} posted a new tweet!".format(tweet.userName))
 
 		#Create the section
 		messageSection = pymsteams.cardsection()
 
 		#Activity Elements
-		messageSection.activityTitle(tweet.userName + " @" + tweet.screenName)
-		messageSection.activitySubtitle("Posted on " + tweet.createdAt)
+		messageSection.activityTitle("{} @{}".format(tweet.userName, tweet.screenName))
+		messageSection.activitySubtitle("Posted on {}".format(tweet.createdAt))
 		messageSection.activityImage(tweet.profilePic)
 		messageSection.activityText(tweet.tweetText)
 
@@ -78,11 +78,11 @@ def get_tweets_from_twitter(screen_names):
 				newTweet = Tweet(tweet.user.profile_image_url_https, tweet.user.name, tweet.user.screen_name, tweet.created_at.rsplit(' ', 2)[0], twitter_status_link, tweet.text)
 				newTweet.share_on_teams()
 
-				print("Posting tweet ID: " + str(tweet.id))
+				print("Posting tweet ID: {}".format(str(tweet.id)))
 				add_to_list_of_tweets(str(tweet.id))
 		
 		if not newTweets:
-			print("No new tweets from " + str(tweet.user.screen_name) + " to post!")
+			print("No new tweets from {} to post!".format(str(tweet.user.screen_name)))
 
 #Run continuously, checking for new tweets every sixty seconds
 while True:
