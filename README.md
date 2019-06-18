@@ -15,7 +15,7 @@ First, you'll need to create a webhook for your Microsoft Teams channel:
 1. In Microsoft Teams, choose More options (⋯) next to the channel name and then choose Connectors.
 2. Scroll through the list of Connectors to Incoming Webhook, and choose Add.
 3. Enter a name for the webhook, upload an image to associate with data from the webhook, and choose Create.
-4. Copy the webhook to the clipboard and save it. You'll need the webhook URL for sending information to Microsoft Teams.
+4. Copy the webhook to the clipboard and save it. You'll need the webhook URL for the teamsUrl variable.
 5. Choose Done.
 
 Once you have the webhook URL, you'll want to set up a twitter account for use with the twitter API.
