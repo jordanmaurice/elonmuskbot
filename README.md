@@ -5,10 +5,14 @@ This is a basic Python script used to repost tweets from Elon Musk and the Tesla
 Example image of what it appears as:
 <img src = "https://github.com/jordanmaurice/elonmuskbot/blob/master/elon_bot_examples.png?raw=true">
 
+# Installation:
+1. Clone this repository to your computer
+2. Install required modules from requirements.txt
+3. Complete Setup below
 
 The script can be easily updated to add additional twitter handles.
 
-To use this script you will need to complete a few steps.
+# Setup Instructions:
 
 First, you'll need to create a webhook for your Microsoft Teams channel:
 
@@ -20,6 +24,6 @@ First, you'll need to create a webhook for your Microsoft Teams channel:
 
 Once you have the webhook URL, you'll want to set up a twitter account for use with the twitter API.
 
-Follow instructions from https://developer.twitter.com/en/apply-for-access.html to set up your account for use with the Twitter API.
+Follow instructions from [Twitter](https://developer.twitter.com/en/apply-for-access.html) to set up your account for use with the Twitter API.
 
 Once you've done both setup steps, simply update the script with the values from Twitter/Microsoft, and it will automatically start posting tweets from the given screen names.
